@@ -11,7 +11,6 @@ public class LoginPage {
 
     WebDriver driver;
 
-    // Updated locators from inspected HTML
     @FindBy(id = "formEmail")
     WebElement userIdInput;
 
@@ -45,7 +44,7 @@ public class LoginPage {
     }
 
     public boolean isLoginButtonEnabled() {
-        return loginButton.isEnabled(); // Always true based on actual UI
+        return loginButton.isEnabled(); 
     }
 
     public boolean isPasswordMasked() {

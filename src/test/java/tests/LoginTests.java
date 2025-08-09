@@ -31,7 +31,6 @@ public void testInvalidLoginShowErrorMsg() {
     loginPage.enterPassword("wrongpass");
     loginPage.clickLogin();
 
-    // Give it time to show the message
     String error = loginPage.getErrorMessage();
     Assert.assertNotNull(error, "Error message should be displayed");
     System.out.println("Error Message: " + error);
